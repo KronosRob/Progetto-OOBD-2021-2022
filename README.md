@@ -1,31 +1,26 @@
+This project was forked in order to test it using ArchUnit. The file README.md contains the documentation of the original project.
 
-# 🔖 Progetto-OO/BD-2021-2022  <img src="icon.png" align="right"/> 
-#### ↬ "Object-Oriention": **_Progettazione e sviluppo di un applicativo in Java dotato di GUI per l'E-Learning_** 
+With this project we want to show how to use ArchUnit to test some architectural feature of a Java Project. Some of these are preimplemented in the ArchUnit API, some other have been implemented from scratch.
 
-#### ↬ "Basi Di Dati": **_Progettazione e sviluppo di una Base di Dati Relazionale per l'E-Learning che consenta di gestire Test basati su Quiz_** 
+All test classes concerning the architectural level are located in src/test/java/alexp/blog/arch.
 
-## 📑 *Organizzazione e Scelte Progettuali*
 
-- Tutta la documentazione sarà prodotta in Latex
-- Per la fase di modellazione si utilizzerà l'applicativo StarUML (file .mdj)
-- La condivisione del materiale avverrà tramite GitHub
-- L'ambiente di sviluppo per l'applicativo sarà Eclipse
-- Per la GUI dell'applicativo utilizzeremo Swing
-- Per la Base di Dati utilizzeremo il DBMS PostgreSQL
-- Il DBMS si troverà su una macchina virtuale (VPS) con S.O. Ubuntu Linux
+# Installation
 
-## ©️ *Contribuenti*
-👨‍💼  Antonio Lanuto : N86003762
+Requirements:
+- JDK 8
+- Maven
+- (Optional) A Java IDE like IntelliJ
 
-🙎‍♂️  Erasmo Prosciutto : N86003546
+Steps using the shell:
+1. Clone the repository (`git clone https://github.com/KronosRob/Progetto-OOBD-2021-2022.git` or download and extract zip archive);
+2. Go inside the project directory;
+3. Use Maven in order to execute all tests (`mvn test`);
+4. Use Maven in order to see all metrics values for all components (`mvn test-compile exec:java`)
 
-### 📬 *Contatti*
-@ an.lanuto@studenti.unina.it
 
-@ e.prosciutto@studenti.unina.it
-
-## 🏬 *Info*
-- Università degli Studi di Napoli: "Federico II" 
-- Dipartimento di Ingegneria Elettrica e delle Tecnologie dell'Informazione
-- Corso di Laurea in Informatica
-- I docenti: Prof. P. Tramontana e Prof. S. Barra
+Steps using IntelliJ:
+1. Clone the repository (`git clone https://github.com/KronosRob/Progetto-OOBD-2021-2022.git` or download and extract zip archive);
+2. Open the project using Intellij
+3. In order to execute all tests, open a test class and execute manually each test;
+4. In order to see each metrics value for each component, open the metrics class MetricsRunner.java and execute the main() method. 
